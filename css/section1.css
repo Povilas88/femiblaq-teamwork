@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1 {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-width: 550px;
+}
+
+.textAndPictureContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    gap: 70px;
+}
+
+.section1Text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 500px;
+    min-width: 240px;
+    height: 200px;
+
+}
+
+.section1Text h2 {
+    color: #F9F5FF;
+}
+
+.section1Text h3 {
+    color: #FAFBFF;
+}
+
+.section1Text p {
+    color: #FAFBFF;
+}
+
+.section1Picture {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+}
+
+.section1Button {
+    background-color: #F9F5FF;
+    border: none;
+    border-radius: 10px;
+    padding: 7px 17px;
+    margin-top: 10px;
+    transition: transform 0.1s;
+    color: black;
+    font-weight: 550;
+}
+
+.section1Button:hover {
+ cursor: pointer;
+ scale: 105%;
+ transform: scale(1.1);
+}
+
+@media screen and (max-width: 750px) {
+     .section1Picture {
+        display: none;
+    }
+
+    .section1Text {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .section1Button {
+        scale: 125%;
+    }
+
+    .section1Button:hover {
+        cursor: pointer;
+        scale: 135%;
+    }
+}

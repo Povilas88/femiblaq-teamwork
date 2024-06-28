@@ -1,0 +1,45 @@
+header {
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+header h1{
+    font-size: 1.3rem;
+    margin: 30px 30px;
+}
+
+header div {
+    margin: 30px 30px;
+}
+
+header div a {
+    margin: 1rem;
+    text-decoration: none;
+}
+.menu {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    header div a {
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        width: 36px;
+        margin: 30px 30px;
+    }
+    .menu:hover {
+        display: block;
+        width: 36px;
+        margin: 30px 30px;
+        cursor: pointer;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+}

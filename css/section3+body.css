@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Inter;
+    src: url(inter/);
+}
+body, body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0A0119;
+    color: white;
+    font-family: asdwe;
+}
+.projectsContainer{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.projectsContainer .projects{
+    margin: 2rem;
+}
+.projectsContainer .procjectPictureContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 1rem;
+}
+.projectsContainer .projectPicture {
+    margin: 1rem;
+
+}
+.projectsContainer img{
+    width: 100%;
+    border-radius: 25px;
+    border: none;
+    transition: transform 0.1s;
+}
+.projectsContainer img:hover {
+    -webkit-filter: brightness(70%);
+    cursor: pointer;
+    transform: scale(1.05);
+    border: none;
+}
+.projectsContainer .tagContainer {
+    display: flex;
+    gap: 0.5rem  ;
+}
+.projectsContainer p {
+    margin: 0.5rem 0;
+}
+.projectsContainer .tagContainer .tag{
+    border: 2px solid white;
+    padding: 0.25rem 0.5rem ;
+    border-radius: 0.35rem;
+    font-size: 0.8rem;    
+}
+@media (max-width:750px) {
+    .projectsContainer .procjectPictureContainer {
+            grid-template-columns: 1fr;
+    }
+    .projectsContainer {
+        font-size: 1.5rem;
+    }
+}
+
